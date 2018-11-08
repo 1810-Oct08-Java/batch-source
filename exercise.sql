@@ -25,3 +25,12 @@ INSERT INTO EMPLOYEE VALUES
 INSERT INTO CUSTOMER (CUSTOMERID, FIRSTNAME, LASTNAME, COMPANY, ADDRESS, CITY, STATE, COUNTRY, POSTALCODE, PHONE, FAX, EMAIL, SUPPORTREPID)
   SELECT 60, 'Rick', 'Sanchez', null, null, null, null, null, null, null, null, 'rick@ricketyrick.edu', null from dual
   UNION ALL SELECT 61, 'Morty', 'Lastname', null, null, null, null, null, null, null, null, 'idontgotoschool@hardknocks.gov', null from dual;
+  
+---- 2.4 updates
+UPDATE CUSTOMER 
+  SET FIRSTNAME='Robert', LASTNAME='Walter'
+  WHERE FIRSTNAME='Aaron' AND LASTNAME='Mitchell';
+UPDATE ARTIST 
+  SET NAME='CCR'
+  WHERE NAME='Creedence Clearwater Revival';
+  
