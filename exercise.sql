@@ -33,4 +33,7 @@ UPDATE CUSTOMER
 UPDATE ARTIST 
   SET NAME='CCR'
   WHERE NAME='Creedence Clearwater Revival';
-  
+
+---- 2.5 like
+SELECT * FROM INVOICE 
+  WHERE BILLINGADDRESS LIKE('T%');
