@@ -1,0 +1,17 @@
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" (change)="selectColor()">
+  <label class="custom-control-label" for="customRadio1" >Colors</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" (change)="selectAnimal()">
+  <label class="custom-control-label" for="customRadio2" >Animals</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" (change)="selectDay()">
+  <label class="custom-control-label" for="customRadio3" >Days</label>
+</div>
+
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of Array">{{item}}</li>
+</ul>

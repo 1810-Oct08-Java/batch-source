@@ -1,0 +1,21 @@
+<table class="table" [ngClass]="{'table table-dark':styleType}">
+<thead>
+  <tr>
+    <th scope="col">First</th>
+    <th scope="col">Last</th>
+    <th scope="col">Email</th>
+    <th scope="col">Birthday</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th>{{person.firstName | uppercase}}</th>
+    <td>{{person.lastName | uppercase}}</td>
+    <td>{{person.email}}</td>
+    <td>{{person.bd | date:"MM/dd/yy"}}</td>
+  </tr>
+</tbody>
+</table>
+
+<button type="button" class="btn btn-primary" (click)="changeStyle()" >Change</button>
+
