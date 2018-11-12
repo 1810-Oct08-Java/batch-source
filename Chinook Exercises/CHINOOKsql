@@ -1,0 +1,138 @@
+--2.1 
+select * from employee;
+select * from employee where LASTNAME = 'King';
+select * from employee where firstname = 'Andrew' and reportsto is null;
+
+--2.2
+select * from album order by title desc;
+select firstname from customer 
+order by city asc;
+
+--2.3 
+insert into genre values(26, 'Hip Hop');
+insert into genre values(27, 'Folk');
+
+insert into employee values(9, 'Singh', 'Pawandeep', 'Developer', 2, 
+TO_DATE('9/9/1994', 'DD/MM/YYYY'), TO_DATE('8/10/2018', 'DD/MM/YYYY'), 
+'500 Stanley Ave', 'Queens', 'NY', 'USA', '11001', '+1 (999) 999-9999', 
+'+1 (999) 999-9999', 'PSINGH@GMAIL.COM');
+
+insert into employee values(10, 'Deep', 'Shah', 'Banking', 5, 
+TO_DATE('4/27/1995', 'DD/MM/YYYY'), TO_DATE('01/01/2018', 'DD/MM/YYYY'), 
+'19 Astoria Drive', 'Astoria', 'NY', 'USA', '11423', '+1 (111) 111-1111', 
+'+1 (222) 222-1111', 'SSH@GMAIL.COM');
+
+insert into customer values(60, 'Mike', 'Joseph', 'CUNY', '11987 Stark Drive',
+'Syracuse', 'NY', 'USA', '11324', '+1 (222) 222-2222', '+1 (222) 222-2222', 'mjoseph@cuny.edu', 3);
+insert into customer values(61, 'Jerry', 'Waxman', 'CUNY', '11987 Stark Drive',
+'Syracuse', 'NY', 'USA', '11324', '+1 (333) 333-3333', '+1 (333) 333-3333', 'jwaxman@cuny.edu', 3);
+
+--2.4
+update customer set firstname = 'Robert', lastname = 'Walter' 
+where firstname = 'Aaron' and lastname = 'Mitchell';
+
+update artist set name = 'CCR'
+where name = 'Creedence Clearwater Revival';
+
+--2.5
+select * from invoice where billingaddress like 'T%';
+
+
+--3.1
+select length(name) from mediatype;
+
+--3.2 
+select avg(total) from invoice;
+select max(unitprice) from track;
+
+
+--4.1
+drop table temp_table; 
+
+create table temp_table( 
+    f_name varchar2(20), 
+    l_name varchar2(20) 
+    );
+
+create or replace procedure get_employee_names 
+as
+begin
+    insert into temp_table select firstname, lastname from employee;
+    commit;
+end;
+/
+
+--4.2 
+create or replace procedure employee_update(
+emp_StreetAddress varchar2, emp_city varchar2, emp_state varchar2, emp_country varchar2, 
+emp_zipcode varchar2, emp_phoneNum varchar2, emp_email varchar2)
+as
+begin
+    update employee 
+    set address = emp_StreetAddress, 
+    city = emp_city, 
+    state = emp_state, 
+    country = emp_country,
+    postalcode = emp_zipcode, 
+    phone = emp_phoneNum, 
+    email = emp_email
+    where employeeid = 3;
+end;
+/
+
+--5.0 
+create or replace procedure new_employee(
+emp_id number, emp_l_name varchar2, emp_f_name varchar2, emp_title varchar2, emp_reportsto number,
+e_birthday date, emp_hire_date date, emp_address varchar2, emp_city varchar2, emp_state varchar2,
+emp_country varchar2, emp_zipcode varchar2, emp_phone varchar2, emp_fax varchar2, emp_email varchar2)
+as
+begin
+    insert into employee values(
+    emp_id, 
+    emp_l_name, 
+    emp_f_name, 
+    emp_title, 
+    emp_reportsto,
+    emp_birthday, 
+    emp_hiredate, 
+    emp_addr, 
+    emp_city, 
+    emp_state,
+    empmp_country, 
+    emp_zipcode, 
+    emp_phone, 
+    emp_fax, 
+    emp_email
+    );
+    commit;
+end;
+/
+
+
+--6.1 
+create table genre_name (
+    genre_id number,
+    genre_name varchar2(20)
+);
+
+create or replace trigger genre_trigger 
+after update of name 
+on genre 
+for each row 
+begin 
+insert into genrehistory 
+values(
+    :old.genreid, 
+    :old.name); 
+END; 
+/ 
+
+
+--7.1
+select firstname, lastname, invoiceid from customer
+inner join invoice on customer.customerid = invoice.customerid;
+
+--7.2
+select ct.customerid, ct.firstname, ct.lastname, 
+it.invoiceid, it.total from customer ct
+full outer join invoice it on ct.customerid = it.customerid;
