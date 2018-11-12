@@ -1,0 +1,6 @@
+<span *ngFor ="let item of lists">
+  <input type="radio" [(ngModel)]="radioSelected" (change)=onItemChange(item) value="{{item.name}}">{{item.name}}
+</span>
+<ul>
+	<li *ngFor ="let name of selectedList">{{name}}</li>
+</ul>

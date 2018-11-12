@@ -1,0 +1,5 @@
+<button (click)="toggleButton()">{{ toggleText() }}</button>
+<div  *ngIf="displayProfile">
+	<p *ngFor="let info of user | keyvalue"> {{info.key}} : {{info.value}}</p>
+</div>
+
