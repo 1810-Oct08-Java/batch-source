@@ -16,12 +16,11 @@ import { FirstCapPipe } from './pipes/first-cap.pipe';
 import { PostService } from './services/post.service';
 import { HttpExampleComponent } from './components/http-example/http-example.component';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
-import { appRoutes } from './routes';
 import { NavComponent } from './components/nav/nav.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
 import { SecondComponent } from './components/second/second.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [ //components and pipes
@@ -45,7 +44,7 @@ import { SecondComponent } from './components/second/second.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [PostService], //services
   bootstrap: [AppComponent] //designates root component
