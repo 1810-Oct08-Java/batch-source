@@ -1,0 +1,64 @@
+select * from employee;
+select * from employee where lastname = 'King';
+select * from employee where firstname = 'Andrew' and reportsto is null;
+select * from Album order by title desc;
+select firstname from customer order by city asc;
+insert into genre (genreid, name) values(28, 'stuff');
+insert into genre (genreid, name) values(29, 'morestuff');
+insert into employee (employeeid, lastname, firstname, title, reportsto, birthdate, hiredate, address, city, state, country, postalcode, phone, fax, email) values (62, 'ln1', 'fn1', 'til', 6, '21-Oct-86', '8-Oct-18', '123 st', 'GP', 'Il', 'US', '60940', '5555555555', null, null);
+insert into employee (employeeid, lastname, firstname, title, reportsto, birthdate, hiredate, address, city, state, country, postalcode, phone, fax, email) values (63, 'ln2', 'fn2', 'aew', 2, '22-Oct-96', '8-Oct-18', '123 st', 'GP', 'Il', 'US', '60940', '5555555555', null, null);
+insert into customer (customerid, firstname, lastname, company, address, city, state, country, postalcode, phone, fax, email, supportrepid) values(63, 'wat', 'man', 'watman', 'cave', 'gothem', 'wat', 'us', '54652', '5555555555', null, 'wat@wat.com', 2);
+insert into customer (customerid, firstname, lastname, company, address, city, state, country, postalcode, phone, fax, email, supportrepid) values(64, 'wat jr', 'man jr', 'watman 2', 'cave', 'gothem', 'wat', 'us', '54652', '5555555555', null, 'wat2@wat.com', 2);
+update customer set firstname = 'Robert', Lastname = 'Walter' where customerid = 32;
+update artist set name ='CCR' where artistid = 76;
+select * from invoice where billingaddress  like 'T%';
+CREATE OR REPLACE FUNCTION Length (name Varchar2)
+RETURN length as
+    Begin
+        Select length(name) as Length from mediatype;
+        return Length;
+        END;
+        /
+select Length(name) from mediatype;
+CREATE OR REPLACE FUNCTION average (name Varchar2)
+RETURN average as
+    Begin
+        Select avg(total) as average from invoice;
+        return average;
+        END;
+        /
+select avg(total) from invoice;
+select name, max(unitprice) from track group by name having max(unitprice) > 0.99;
+CREATE OR REPLACE FUNCTION expensive (name Varchar2)
+RETURN expensive as
+    Begin
+        select name as expensive, max(unitprice) from track group by name having max(unitprice) > 0.99
+        return expensive;
+        END;
+        /
+select name, max(unitprice) from track group by name having max(unitprice) > 0.99;
+create procedure get_employee_name
+as
+select firstname, lastname from employee
+go;
+create procedure update_phone @phone varchar2(24)
+as
+update employee set phone = @phone
+go;
+create procedure cust
+as
+select * from customer
+begin transaction
+insert into customer (customerid, firstname, lastname, company, address, city, state, country, postalcode, phone, fax, email, supportrepid) values(65, 'wat', 'man', 'watman', 'cave', 'gothem', 'wat', 'us', '54652', '5555555555', null, 'wat@wat.com', 2)
+end transaction
+go;
+select sysdate from customer;
+create or replace trigger emp_fired
+after insert of employeeid on employee
+for each row
+declare
+begin
+insert into fired (62, 'ln1', 'fn1', 'til', 6, '21-Oct-86', '8-Oct-18', sysdate, '123 st', 'GP', 'Il', 'US', '60940', '5555555555', null, null)
+end;
+select customer.firstname, customer.lastname, invoiceid from customer inner join invoice on customer.customerid = invoice.customerid;
+select customer.customerid, customer.firstname, customer.lastname, invoice.invoiceid, invoice.total from customer full outer join invoice on CUSTOMER.CUSTOMERID = invoice.customerid;
