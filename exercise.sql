@@ -38,16 +38,30 @@ UPDATE ARTIST
 SELECT * FROM INVOICE 
   WHERE BILLINGADDRESS LIKE('T%');
   
-CREATE OR REPLACE FUNCTION MEDIATYPE_LENGTH(idx NUMBER)
+CREATE OR REPLACE FUNCTION MEDIATYPE_LENGTH2(idx NUMBER)
 RETURN NUMBER AS
 val NUMBER := 0;
+nom varchar2 := '';
 BEGIN
-  SELECT LENGTH(NAME) INTO val FROM MEDIATYPE WHERE MEDIATYPEID=idx;
-  RETURN val;
+ nom := SELECT MEDIATYPE.zzNAME FROM MEDIATYPE WHERE MEDIATYPEID=idx;
+ val := LENGTH(nom);
+ RETURN VAL;
 END;
 /
 
-SELECT MEDIATYPE_LENGTH(2) FROM MEDIATYPE;
+CREATE OR REPLACE FUNCTION MEDIATYPE_LENGTH(name in varchar2)
+return number as
+val number;
+BEGIN
+ val := LENGTH(name);
+ RETURN val;
+END;
+/
+select id, MEDIATYPE_LENGTH(name) from mediatype;
+
+
+
+Select MEDIATYPE_LENGTH(2) from mediatype group by name;
 
 --MEDIATYPE_LENGTH(1);
 CREATE OR REPLACE FUNCTION AVG_INVOICES 
@@ -61,3 +75,86 @@ END;
 --SELECT AVG_INVOICES() FROM INVOICE;
 SELECT AVG(TOTAL) FROM INVOICE;
 SELECT MAX(UNITPRICE) FROM TRACK;
+
+CREATE OR REPLACE PROCEDURE all_full_names
+names SYS_REFCURSOR
+AS
+BEGIN
+OPEN names FOR
+  SELECT FIRSTNAME, LASTNAME INTO DBMS_OUTPUT.PUT_LINE FROM EMPLOYEE;
+END;
+/
+
+CREATE OR REPLACE PROCEDURE UPDATE_EMPLOYEE_INFO(
+emp_id in number,
+nameLast in varchar2, 
+firstName in varchar2, 
+title IN varchar2, 
+toreport in number, 
+birthDay in date, 
+dateHired in date, 
+address in varchar2, 
+city in varchar2, 
+city_state in varchar2,
+postal in varchar2,
+country in varchar2,
+phone in varchar2,
+fax in varchar2,
+email in varchar2
+)
+as
+begin
+update employee
+set LASTNAME = nameLast,
+FIRSTNAME = firstName,
+TITLE = title,
+REPORTSTO = toreport,
+BIRTHDATE = birthDay,
+HIREDATE = dateHired,
+ADDRESS = address, 
+CITY = city, 
+STATE = city_state, 
+POSTALCODE = postal, 
+COUNTRY = country,
+PHONE = phone,
+FAX = fax,
+EMAIL = email
+WHERE EMPLOYEEID = emp_id;
+end;
+/
+
+CREATE OR REPLACE PROCEDURE NEW_CUSTOMER(
+C_ID in number,
+FNAME in varchar2, 
+LNAME in varchar2, 
+CO in varchar2, 
+ADDR in varchar2, 
+CY in varchar2, 
+ST in varchar2, 
+CTR in varchar2, 
+POST in varchar2, 
+FX in varchar2, 
+PHN in varchar2, 
+MAIL in varchar2, 
+SUPPTREP_ID in number
+)
+AS BEGIN
+INSERT INTO CUSTOMER VALUES
+(C_ID, FNAME, LNAME, CO, ADDR, CY, ST, CTR, POST, FX, PHN, MAIL, SUPPTREP_ID);
+END;
+/
+
+
+--CUSTOMERID
+--FIRSTNAME
+--LASTNAME
+--COMPANY
+--ADDRESS
+--CITY
+--STATE
+--COUNTRY
+--POSTALCODE
+--PHONE
+--FAX
+--EMAIL
+--SUPPORTREPID
