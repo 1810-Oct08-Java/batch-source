@@ -1,0 +1,18 @@
+<h4>2. Profile Content</h4>
+<button (click)="toggleShow()">{{btnShow}}</button>
+<div>
+  <div>
+    <span> Statement: 
+      <span class="toggle-panel" *ngIf="show" [hidden]="hide">
+        {{title}}{{user.hello}}
+      </span>
+    </span>
+  </div>
+  <div>
+    <span> Hero Name: 
+      <span class="toggle-panel" *ngIf="show" [hidden]="hide">
+        {{myHero}}{{user.hero}}
+      </span>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<h4>3. Select Component</h4>
+<div>
+  <input type="radio"  (click)="showAnimals()">Animals
+  <input type="radio"  (click)="showColors()">Colors
+  <input type="radio"  (click)="showDays()">Days
+</div>
+<div>
+  <div>
+    <div class="toggle-panel" *ngIf="showAnim" >
+      <ul>
+        <li *ngFor="let animal of animals">
+          {{ animal }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class="toggle-panel" *ngIf="showColr">
+      <ul>
+        <li *ngFor="let color of colors">
+          {{ color }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class="toggle-panel" *ngIf="showDay">
+      <ul>
+        <li *ngFor="let day of days">
+          {{ day }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
