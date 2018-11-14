@@ -2,6 +2,8 @@ package com.revature.util;
 
 import java.util.List;
 
+import org.hibernate.Session;
+
 import com.revature.dao.CaveDao;
 import com.revature.dao.CaveDaoImpl;
 import com.revature.model.Cave;
@@ -9,14 +11,14 @@ import com.revature.model.Cave;
 public class Driver {
 
 	public static void main(String[] args) {
-//		Session s = HibernateUtil.getSession();
-//		s.close();
+		Session s = HibernateUtil.getSession();
+		s.close();
 		
-		CaveDao cd = new CaveDaoImpl();
-		
-		Cave c1 = new Cave("Luray Caverns");
-		Cave c2 = new Cave("Dixie Caverns");
-		Cave c3 = new Cave("Bat Cave");
+//		CaveDao cd = new CaveDaoImpl();
+//		
+//		Cave c1 = new Cave("Luray Caverns");
+//		Cave c2 = new Cave("Dixie Caverns");
+//		Cave c3 = new Cave("Bat Cave");
 		
 //		cd.createCave(c1);
 //		cd.createCave(c2);
@@ -30,7 +32,7 @@ public class Driver {
 //			System.out.println(c);
 //		}
 		
-		System.out.println(cd.getCaveById(5));
+//		System.out.println(cd.getCaveById(5));
 
 	}
 

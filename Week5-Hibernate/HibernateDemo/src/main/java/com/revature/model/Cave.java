@@ -1,8 +1,18 @@
 package com.revature.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table
 public class Cave {
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="caveSequence")
+	@SequenceGenerator(name="caveSequnce", allocationSize=1, sequenceName="SQ_BEEHIVE_PK")
+	@Column(name="CAVE_ID")
 	private int id;
+	
+	@Column(name="CAVE_NAME")
 	private String name;
 	
 	public Cave() {
