@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name="allo.model.Invoice">
+		<id name="id" column="INVOICE_ID">
+			<generator class="increment"></generator>
+		</id>
+			<property name="invoice_date" type="org.hibernate.type.DateType"></property>
+			<property name="amount" type="org.hibernate.type.DoubleType"></property>
+	</class>
+</hibernate-mapping> 
