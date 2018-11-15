@@ -1,0 +1,23 @@
+<p> This is part 3 </p>
+
+<form action="">
+  <input type="radio" name="gender" value="animals" (click)="printAnimals()"> Animals
+  <input type="radio" name="gender" value="colors" (click)="printColors()"> Colors
+  <input type="radio" name="gender" value="days" (click)="printDays()"> Days 
+  <input type="submit" value="Submit">
+</form>
+<ul>
+  <li *ngFor="let animal of animals">
+      {{type1}}
+  </li>
+</ul>
+<ul>
+    <li *ngFor="let color of colors">
+        {{type2}}
+    </li>
+  </ul>
+  <ul>
+      <li *ngFor="let day of days">
+          {{type3}}
+      </li>
+    </ul>

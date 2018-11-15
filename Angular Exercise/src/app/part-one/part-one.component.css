@@ -1,0 +1,9 @@
+#q1{
+    border-style: double;
+    border-color: blue;
+}
+
+#colorButton{
+    background-color: red;
+    size: 50px;
+}
