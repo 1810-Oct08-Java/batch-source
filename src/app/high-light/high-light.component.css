@@ -1,0 +1,4 @@
+.something button.selected:hover {
+    background-color: black !important;
+    color: black;
+  }

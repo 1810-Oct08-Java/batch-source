@@ -1,0 +1,12 @@
+<div>
+  <tr>
+    <th>Full name</th>
+    <th>Email</th>
+    <th>Birthday</th>
+  </tr>
+  <tr *ngFor="let obj of objs">
+    <td>{{obj.firstName | uppercase}} {{obj.lastName | uppercase}}</td>
+    <td>{{obj.email}}</td> 
+    <td>{{obj.birthday | date:dd:mm:yyyy }}</td>
+  </tr>
+</div>
