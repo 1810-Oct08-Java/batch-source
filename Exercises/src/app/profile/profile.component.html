@@ -1,0 +1,11 @@
+<h3>Player Profile</h3>
+<ul [style.display]="isHidden ? 'none' : 'block'">
+  <li>Display Name: {{displayName}}</li>
+  <li>Level {{level}}</li>
+  <li>Name: {{name}}</li>
+  <li>Surname: {{surname}}</li>
+  <li>Age: {{age}}</li>
+  <li>Sex: {{sex}}</li>
+</ul>
+<button (click)="changeDisplay()">{{btnText}}</button>
+
