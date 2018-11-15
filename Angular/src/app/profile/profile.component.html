@@ -1,0 +1,18 @@
+<div>
+  <div *ngIf="displayBool">
+    <h3>User Info</h3>
+    <div>
+        <label>
+          <span>Username:</span> {{currentUser.userName}}
+        </label>
+    </div>
+    <div><span>First Name: </span>{{currentUser.firstName}}</div>
+    <div>
+        <label>
+          <span>Last Name:</span> {{currentUser.lastName}}
+        </label>
+    </div>
+    
+  </div>
+  <button (click)="toggleText()">{{buttonText}}</button>
+</div>
