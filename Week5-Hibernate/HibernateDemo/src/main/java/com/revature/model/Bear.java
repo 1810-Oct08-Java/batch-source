@@ -6,6 +6,8 @@ import java.util.List;
 
 import javax.persistence.*;
 
+@NamedQueries({@NamedQuery(name="getByIdQuery", query="from Bear where id = :idVar")})
+
 @Entity
 @Table
 public class Bear {
@@ -28,7 +30,7 @@ public class Bear {
 	private Cave cave;
 	
 	//@Transient
-	@ManyToMany
+	@ManyToMany(fetch=FetchType.EAGER)
 	@JoinTable(
 			name="BEAR_BEEHIVE",
 			joinColumns= {@JoinColumn(name="BEAR_ID")},
@@ -44,6 +46,13 @@ public class Bear {
 	public Bear(int id, String name, Date birthday, Cave cave) {
 		super();
 		this.id = id;
+		this.name = name;
+		this.birthday = birthday;
+		this.cave = cave;
+	}
+
+	public Bear(String name, Date birthday, Cave cave) {
+		super();
 		this.name = name;
 		this.birthday = birthday;
 		this.cave = cave;

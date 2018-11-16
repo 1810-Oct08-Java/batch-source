@@ -9,7 +9,7 @@
 		<property name="name" type="org.hibernate.type.StringType" column="BEAR_NAME"></property>
 		<property name="birthday" type="org.hibernate.type.DateType"></property>
 		<many-to-one name="cave" column="CAVE_ID" class="com.revature.model.Cave"></many-to-one>
-		<bag name="beehives" table="BEAR_BEEHIVE">
+		<bag name="beehives" table="BEAR_BEEHIVE" lazy="false">
 			<key>
 				<column name="BEAR_ID" not-null="true"></column>
 			</key>
@@ -18,4 +18,7 @@
 			</many-to-many>
 		</bag>
 	</class>
+	<query name="getByIdQuery">
+		<![CDATA[from Bear where id = :idVar]]>
+	</query>
 </hibernate-mapping>
