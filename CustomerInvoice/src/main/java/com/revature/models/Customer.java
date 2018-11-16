@@ -9,6 +9,13 @@ public class Customer {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	public Customer(String name, String phoneNumber) {
+		super();
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+	}
+
 	public Customer(Integer id, String name, String phoneNumber) {
 		super();
 		this.id = id;

@@ -8,6 +8,20 @@ public class Invoice {
 	private Date invoiceDate;
 	private double amount;
 	private Customer customer;
+	
+	
+	public Invoice() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Invoice(Date invoiceDate, double amount, Customer customer) {
+		super();
+		this.invoiceDate = invoiceDate;
+		this.amount = amount;
+		this.customer = customer;
+	}
+
 	public Invoice(int id, Date invoiceDate, double amount, Customer customer) {
 		super();
 		this.id = id;
