@@ -1,3 +1,5 @@
+# I think they are unnecessary
+*.settings
 
 # KDE
 *.directory
