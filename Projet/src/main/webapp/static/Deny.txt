@@ -1,0 +1,11 @@
+
+<hr>
+<p>Reject Request</p>
+<div>
+<form id="rejectReq" action="reject" method="post">
+		ClaimID: <input id="claimID" type="number" step="1" name="rejClaim" /> <br>
+		<input type="submit" value="Reject"/>
+</form>
+</div>
+
+<hr>
