@@ -1,0 +1,12 @@
+
+<hr>
+<p>Approve Request</p>
+<div>
+<form id="apprReq" action="approve" method="post">
+		ClaimID: <input id="claimID" type="number" step="1" name="appClaim" /> <br>
+		<input type="submit" value="Approve"/>
+</form>
+</div>
+
+<hr>
+
