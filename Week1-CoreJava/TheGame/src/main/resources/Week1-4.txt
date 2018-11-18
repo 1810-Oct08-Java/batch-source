@@ -9,7 +9,6 @@ What is the benefit of normalization? What is required for the first three norma
 Explain the difference between stored procedure and function in pl/sql?
 What's a callback function? Where have you seen them implemented?
 Explain the AJAX workflow?
-Explain the difference between
 What 4 properties are present by default in the configuration of the root module?
 What is the difference between a forward and a redirect? How do I implement each?
 What are the available HTTP verbs? What are they each used for?
