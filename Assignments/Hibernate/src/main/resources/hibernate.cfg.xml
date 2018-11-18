@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@revaturetrainingdatabase.c4svrsh9eep5.us-east-2.rds.amazonaws.com:1521:ORCL</property>
+		<property name="hibernate.connection.username">jhtran</property>
+		<property name="hibernate.connection.password">Jackman78</property>
+		
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">true</property>
+		<!-- include mapping as resources [hbm.xml files] or classes [annotation] -->
+		<mapping resource="mapping/customer.hbm.xml"/>
+		<mapping resource="mapping/invoice.hbm.xml"/>
+
+	</session-factory>
+</hibernate-configuration>
