@@ -1,0 +1,42 @@
+2018-11-19 14:27:14 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 14:27:14 EST 2018]; root of context hierarchy
+2018-11-19 14:27:14 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 14:27:15 INFO  root:23 - 1+2=3
+2018-11-19 14:27:15 INFO  root:18 - int com.revature.beans.Calculator.add(int,int)was called
+2018-11-19 14:27:15 INFO  root:18 - int com.revature.beans.Calculator.subtract(int,int)was called
+2018-11-19 14:27:15 INFO  root:28 - 5-3=2
+2018-11-19 14:27:15 INFO  root:18 - int com.revature.beans.Calculator.multiply(int,int)was called
+2018-11-19 14:27:15 INFO  root:33 - 3*7=21
+2018-11-19 14:27:15 INFO  root:18 - double com.revature.beans.Calculator.divide(int,int)was called
+2018-11-19 14:32:14 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 14:32:14 EST 2018]; root of context hierarchy
+2018-11-19 14:32:15 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 14:32:15 INFO  root:23 - 1+2=3
+2018-11-19 14:32:15 INFO  root:18 - int com.revature.beans.Calculator.add(int,int)was called
+2018-11-19 14:32:15 INFO  root:18 - int com.revature.beans.Calculator.subtract(int,int)was called
+2018-11-19 14:32:15 INFO  root:28 - 5-3=2
+2018-11-19 14:32:15 INFO  root:18 - int com.revature.beans.Calculator.multiply(int,int)was called
+2018-11-19 14:32:15 INFO  root:33 - 3*7=21
+2018-11-19 14:32:15 INFO  root:38 - 5/2=2.5
+2018-11-19 14:32:15 INFO  root:18 - double com.revature.beans.Calculator.divide(int,int)was called
+2018-11-19 14:32:33 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 14:32:33 EST 2018]; root of context hierarchy
+2018-11-19 14:32:33 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 14:32:34 INFO  root:23 - 1+2=3
+2018-11-19 14:32:34 INFO  root:18 - int com.revature.beans.Calculator.add(int,int)was called
+2018-11-19 14:32:34 INFO  root:18 - int com.revature.beans.Calculator.subtract(int,int)was called
+2018-11-19 14:32:34 INFO  root:28 - 5-3=2
+2018-11-19 14:32:34 INFO  root:18 - int com.revature.beans.Calculator.multiply(int,int)was called
+2018-11-19 14:32:34 INFO  root:33 - 3*7=21
+2018-11-19 14:32:34 INFO  root:38 - 5/2=2.5
+2018-11-19 14:32:34 INFO  root:18 - double com.revature.beans.Calculator.divide(int,int)was called
+2018-11-19 14:32:34 ERROR root:43 - double com.revature.beans.Calculator.divide(int,int)divide by zero
+2018-11-19 14:32:58 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 14:32:58 EST 2018]; root of context hierarchy
+2018-11-19 14:32:58 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 14:32:59 INFO  root:18 - int com.revature.beans.Calculator.add(int,int)was called
+2018-11-19 14:32:59 INFO  root:23 - 1+2=3
+2018-11-19 14:32:59 INFO  root:18 - int com.revature.beans.Calculator.subtract(int,int)was called
+2018-11-19 14:32:59 INFO  root:28 - 5-3=2
+2018-11-19 14:32:59 INFO  root:18 - int com.revature.beans.Calculator.multiply(int,int)was called
+2018-11-19 14:32:59 INFO  root:33 - 3*7=21
+2018-11-19 14:32:59 INFO  root:18 - double com.revature.beans.Calculator.divide(int,int)was called
+2018-11-19 14:32:59 INFO  root:38 - 5/2=2.5
+2018-11-19 14:32:59 INFO  root:18 - double com.revature.beans.Calculator.divide(int,int)was called
+2018-11-19 14:32:59 ERROR root:43 - double com.revature.beans.Calculator.divide(int,int)divide by zero
