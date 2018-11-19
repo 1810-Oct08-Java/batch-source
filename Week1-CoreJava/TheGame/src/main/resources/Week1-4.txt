@@ -1,0 +1,19 @@
+Name and explain the thread states of a Java thread.
+What is reflection?
+Explain the difference between a checked exception, an unchecked exception, and an Error. Give an example each.
+What is polymorphism? Explain the different examples of polymorphism in Java.
+Explain the difference between an abstract class an interface.
+Explain a closure.
+Explain the difference between let, var, and const.
+What is the benefit of normalization? What is required for the first three normal forms?
+Explain the difference between stored procedure and function in pl/sql?
+What's a callback function? Where have you seen them implemented?
+Explain the AJAX workflow?
+What 4 properties are present by default in the configuration of the root module?
+What is the difference between a forward and a redirect? How do I implement each?
+What are the available HTTP verbs? What are they each used for?
+What are truthy and falsy values in JavaScript? What makes them possible?
+What is a guard and default operator?
+What makes up a component?
+What are the properties of a transaction?
+What concurrency issues can arise while interacting with a database?

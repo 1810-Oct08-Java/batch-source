@@ -1,0 +1,19 @@
+What is Jenkins?
+What is Continuous Integration?
+What's the difference between continuous delivery and continuous deployment?
+What is S3?
+What is EC2?
+What is IAM?
+What is EBS?
+What is Elastic Load Balancing?
+What is the difference between veritcal and horizontal scaling?
+What are the build phases of the default maven lifecycle?
+What is the difference between get and load?
+What are the three hibernate object states?
+What is included in the hibernate.cfg.xml file?
+What is an hbm file? What is included in them?
+What is the difference between level 1 and level 2 caching in hibernate?
+What are the different inheritance strategies in hibernate?
+What's the difference between creating a query with HQL and creating a query with CriteriaQuery?
+What are the roles of the cascade and fetch attribute in a @ManyToMany annotation?
+What is dependency injection? What types of dependency injection does spring support?
