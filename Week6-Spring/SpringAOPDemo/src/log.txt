@@ -1,3 +1,95 @@
-2018-11-19 12:03:38 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 12:03:38 EST 2018]; root of context hierarchy
-2018-11-19 12:03:38 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
-2018-11-19 12:03:39 INFO  root:17 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:17:42 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:17:42 EST 2018]; root of context hierarchy
+2018-11-19 13:17:42 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:17:43 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:17:43 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:17:43 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:18:16 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:18:16 EST 2018]; root of context hierarchy
+2018-11-19 13:18:16 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:18:17 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:18:17 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:18:17 ERROR root:24 - void com.revature.beans.Bear.bearHibernates() threw an exception
+2018-11-19 13:20:41 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:20:41 EST 2018]; root of context hierarchy
+2018-11-19 13:20:41 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:20:42 INFO  root:34 - setter called
+2018-11-19 13:20:42 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:20:42 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:20:42 ERROR root:24 - void com.revature.beans.Bear.bearHibernates() threw an exception
+2018-11-19 13:25:57 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:25:57 EST 2018]; root of context hierarchy
+2018-11-19 13:25:57 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:25:58 INFO  root:34 - setter called
+2018-11-19 13:25:58 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:25:58 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:25:58 ERROR root:24 - void com.revature.beans.Bear.bearHibernates() threw an exception
+2018-11-19 13:26:17 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:26:17 EST 2018]; root of context hierarchy
+2018-11-19 13:26:17 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:26:18 INFO  root:34 - setter called
+2018-11-19 13:26:18 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:26:18 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:26:18 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:26:47 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:26:47 EST 2018]; root of context hierarchy
+2018-11-19 13:26:47 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:26:48 INFO  root:34 - setter called
+2018-11-19 13:26:48 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:26:48 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:26:48 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:34:24 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:34:24 EST 2018]; root of context hierarchy
+2018-11-19 13:34:24 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:34:24 INFO  root:34 - setter called
+2018-11-19 13:34:24 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:34:24 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:34:24 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:34:24 INFO  root:19 - void com.revature.beans.Bear.wakeUp() was called
+2018-11-19 13:34:48 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:34:48 EST 2018]; root of context hierarchy
+2018-11-19 13:34:48 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:34:49 INFO  root:34 - setter called
+2018-11-19 13:34:49 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:34:49 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:34:49 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:35:49 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:35:49 EST 2018]; root of context hierarchy
+2018-11-19 13:35:49 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:35:50 INFO  root:34 - setter called
+2018-11-19 13:35:50 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:35:50 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:35:50 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:35:50 INFO  root:19 - String com.revature.beans.Bear.toString() was called
+2018-11-19 13:36:40 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:36:40 EST 2018]; root of context hierarchy
+2018-11-19 13:36:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:36:41 INFO  root:34 - setter called
+2018-11-19 13:36:41 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:36:41 INFO  root:34 - setter called
+2018-11-19 13:36:41 INFO  root:19 - void com.revature.beans.Bear.setAwake(boolean) was called
+2018-11-19 13:36:41 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:36:41 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:36:41 INFO  root:19 - String com.revature.beans.Bear.toString() was called
+2018-11-19 13:37:20 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:37:20 EST 2018]; root of context hierarchy
+2018-11-19 13:37:20 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:37:20 INFO  root:34 - setter called
+2018-11-19 13:37:20 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:37:20 INFO  root:34 - setter called
+2018-11-19 13:37:20 INFO  root:19 - void com.revature.beans.Bear.setAwake(boolean) was called
+2018-11-19 13:37:20 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:37:20 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:37:20 INFO  root:19 - String com.revature.beans.Bear.toString() was called
+2018-11-19 13:37:20 INFO  root:19 - void com.revature.beans.Bear.wakeUp() was called
+2018-11-19 13:37:42 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:37:42 EST 2018]; root of context hierarchy
+2018-11-19 13:37:42 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:37:43 INFO  root:34 - setter called
+2018-11-19 13:37:43 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:37:43 INFO  root:34 - setter called
+2018-11-19 13:37:43 INFO  root:19 - void com.revature.beans.Bear.setAwake(boolean) was called
+2018-11-19 13:37:43 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:37:43 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:37:43 INFO  root:19 - String com.revature.beans.Bear.toString() was called
+2018-11-19 13:37:43 INFO  root:19 - void com.revature.beans.Bear.wakeUp() was called
+2018-11-19 13:37:43 INFO  root:19 - String com.revature.beans.Bear.toString() was called
+2018-11-19 13:38:00 INFO  ClassPathXmlApplicationContext:578 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@573fd745: startup date [Mon Nov 19 13:38:00 EST 2018]; root of context hierarchy
+2018-11-19 13:38:00 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [beans.xml]
+2018-11-19 13:38:00 INFO  root:34 - setter called
+2018-11-19 13:38:00 INFO  root:19 - void com.revature.beans.Bear.setFull(boolean) was called
+2018-11-19 13:38:00 INFO  root:34 - setter called
+2018-11-19 13:38:00 INFO  root:19 - void com.revature.beans.Bear.setAwake(boolean) was called
+2018-11-19 13:38:00 INFO  root:29 - bear is trying to hibernate
+2018-11-19 13:38:00 INFO  root:19 - void com.revature.beans.Bear.bearHibernates() was called
+2018-11-19 13:38:00 INFO  root:19 - String com.revature.beans.Bear.toString() was called
+2018-11-19 13:38:00 INFO  root:19 - void com.revature.beans.Bear.wakeUp() was called
+2018-11-19 13:38:00 INFO  root:19 - String com.revature.beans.Bear.toString() was called

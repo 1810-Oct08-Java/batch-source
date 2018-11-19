@@ -10,8 +10,13 @@ public class Driver {
 	public static void main(String[] args) {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
 		Bear b = (Bear) ac.getBean("bear");
-		b.setFull(true);
-		
+		b.setFull(false);
+		b.setAwake(false);
+		Bear.setIsWinter(true);
+		b.bearHibernates();
+		System.out.println(b);
+		b.wakeUp();
+		System.out.println(b);
 	}
 
 }

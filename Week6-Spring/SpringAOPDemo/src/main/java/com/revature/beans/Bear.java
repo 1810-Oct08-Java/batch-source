@@ -33,6 +33,18 @@ public class Bear {
 		this.isAwake = isAwake;
 	}
 
+	public void bearHibernates() {
+		if(Bear.isWinter()) {
+			System.out.println("zzzz");
+		} else {
+			throw new RuntimeException("bears hibernate in the winter");
+		}
+	}
+	
+	public void wakeUp() {
+		setAwake(true);
+	}
+	
 	@Override
 	public String toString() {
 		return "Bear [isFull=" + isFull + ", isAwake=" + isAwake + "]";
