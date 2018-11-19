@@ -18,7 +18,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-@NamedQueries({@NamedQuer(name="getByIdQuery"))
+//@NamedQueries({@NamedQuer(name="getByIdQuery"))
 
 @Entity
 @Table
