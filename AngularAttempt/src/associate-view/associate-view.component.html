@@ -1,0 +1,19 @@
+<p>
+This text is associated with "AssociateViewComponent".
+</p>
+
+<div>
+    <div class="radio">
+        <label><input type="radio" [(ngModel)]="radselect" name="prop" value="1">Animals</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" [(ngModel)]="radselect" name="prop" value="2">Colors</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" [(ngModel)]="radselect" name="prop" value="3">Days</label>
+    </div>
+</div>
+
+<app-animal *ngIf="radselect == 1"></app-animal>
+<app-color *ngIf="radselect == 2"></app-color>
+<app-day *ngIf="radselect == 3"></app-day>

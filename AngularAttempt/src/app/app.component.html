@@ -1,0 +1,8 @@
+<title>{{title}}</title>
+
+<button mat-button *ngIf="! showing" (click)="showing=true">Show Users</button>
+<button mat-button *ngIf="showing" (click)="showing=false">Hide Users</button>
+<app-user *ngIf="showing"></app-user>
+
+
+<app-associate-view></app-associate-view>
