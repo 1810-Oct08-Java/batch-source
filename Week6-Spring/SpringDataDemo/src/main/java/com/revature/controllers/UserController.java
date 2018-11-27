@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,19 +26,19 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	
-	@GetMapping
+	@GetMapping(produces=MediaType.APPLICATION_JSON_VALUE)
 //	@ResponseBody
 	public List<User> findAllUsers(){
 		return userService.findAllUsers();
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping(value="/{id}",produces=MediaType.APPLICATION_JSON_VALUE)
 //	@ResponseBody
 	public User findUserById(@PathVariable("id") Integer id) {
 		return userService.findUserById(id);
 	}
 	
-	@PostMapping
+	@PostMapping(consumes=MediaType.APPLICATION_JSON_VALUE)
 //	@ResponseBody
 	public User addUser(@Valid @RequestBody User u) {
 		return userService.addUser(u);
