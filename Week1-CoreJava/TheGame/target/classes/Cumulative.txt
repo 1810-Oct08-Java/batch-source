@@ -1,0 +1,17 @@
+What are the WSDL tags?
+What are some differences between SOAP and REST?
+What is meant by SOAP being contract based?
+How do you expose a SOAP service?
+How can you consume a SOAP service?
+What tags would we find in a SOAP message?
+What are the SOAP binding types?
+What are are some advantages of microservices?
+What are some disadvantages of microservices?
+What are some common patterns that Spring Cloud provides solutions to?
+What is Eureka?
+What is Zuul?
+What is Hystrix?
+What is Ribbon?
+What is Feign Client?
+What is a config server?
+What is Eureka's self preservation mode?

@@ -10,7 +10,7 @@ public class QuestionCollection  extends ArrayList<Question> {
 	private static final long serialVersionUID = 1L;
 
 	public QuestionCollection() {
-		String fileName = "src/main/resources/Week5-6.txt";
+		String fileName = "src/main/resources/Cumulative.txt";
         String line = null;
         
         try {

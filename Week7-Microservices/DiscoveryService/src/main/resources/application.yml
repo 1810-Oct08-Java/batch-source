@@ -1,0 +1,14 @@
+## server.port=8761
+## ^ the equivalent configuration that we've seen in a properties file
+
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

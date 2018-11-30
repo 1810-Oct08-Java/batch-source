@@ -1,0 +1,16 @@
+server:
+  port: 2333
+
+spring:
+  application:
+    name: account-service
+
+eureka:
+  client:
+    service-url: 
+      default: http://localhost:8761/eureka 
+# this is the default location of eureka
+# and this is the default service url @EnableEurekaClient is going to configure
+  instance:
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 1       
